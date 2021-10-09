@@ -1,0 +1,28 @@
+<div class="parent">
+    <div class="container">
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th> Last Name </th>
+                    <th> Email </th>
+                    <th> Gender </th>
+                    <th> Adress </th>
+                    <th> Birthday </th>
+                    <th>Actions</th>
+                </tr>
+                <tr *ngFor="let data of customerData;let i = index">
+                    <td>{{data.firstname}}</td>
+                    <td>{{data.lastname}}</td>
+                    <td>{{data.email}}</td>
+                    <td>{{data.gender}}</td>
+                    <td>{{data.adress}}</td>
+                    <td>{{data.birthday}}</td>
+                    <td><button class="edit" [routerLink]="['/edit',i]">Edit Entry</button><button class="delete" (click)="delete(i)">Delete Entry</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="add-div">
+            <button class="add" routerLink="/add">Add Customers</button>
+        </div>
+</div>
+

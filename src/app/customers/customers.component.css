@@ -1,0 +1,51 @@
+.parent {
+  min-height: 80vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+th,
+td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid black;
+}
+td button {
+  padding: 6px 16px;
+  margin: 0 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+}
+.edit {
+  background-color: rgb(110, 101, 101);
+  color: white;
+}
+.delete {
+  background-color: #cb132d;
+  color: white;
+}
+.add-div {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+.add {
+  margin: auto;
+  background-color: #333;
+  color: white;
+  padding: 20px 20px;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+button:hover {
+  opacity: 0.8;
+}
