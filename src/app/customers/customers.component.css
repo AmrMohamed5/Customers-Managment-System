@@ -1,6 +1,3 @@
-.parent {
-  min-height: 80vh;
-}
 .container {
   display: flex;
   justify-content: center;
@@ -45,7 +42,9 @@ td button {
   border: none;
   cursor: pointer;
   width: 10%;
+  margin-bottom: 100px !important;
 }
+
 button:hover {
   opacity: 0.8;
 }
